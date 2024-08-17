@@ -12,6 +12,9 @@ async def read_items(
             title="Query String", 
             description="Qeury String for the items to search in the database that have a good match",
             min_length=3,
+            alias="item-query",
+            deprecated=True,
+            include_in_schema=False,
         ),
     ] = None,
 ):
